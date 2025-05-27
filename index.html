@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estefania's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        .section {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .about-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .about-content {
+            flex: 1;
+        }
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        .interest-tags, .language-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .tag {
+            background: #ddd;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .linkedin-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .linkedin-link img {
+            width: 24px;
+            height: 24px;
+        }
+        .linkedin-link:hover {
+            text-decoration: underline;
+        }
+        .github-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 5px;
+            font-size: 16px;
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .github-link img {
+            width: 20px;
+            height: 20px;
+        }
+        .accordion {
+            background: #f4f4f4;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            transition: 0.4s;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion:after {
+            content: '\25BC';
+            font-size: 14px;
+            color: #333;
+            transition: transform 0.3s ease;
+        }
+        .accordion.active:after {
+            transform: rotate(180deg);
+        }
+        .panel {
+            padding: 10px 15px;
+            display: none;
+            background: white;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        a {
+            color: #0077cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👋🏾 Welcome to My Portfolio</h1>
+    </header>
+
+    <section class="section" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hi, I’m Estefania Silva da Cunha, a Business Informatics graduate with interests in the topics: machine learning, computer vision, and accessibility (WCAG). I'm currently pursuing an M.Sc. in Inclusive Design – Intelligent Systems at Frankfurt University of Applied Sciences.</p>
+                <p>My portfolio focuses on projects I’ve worked on during my master’s studies, mainly in machine learning applications, intelligent systems, and accessibility-driven solutions.</p>
+                <p>Currently, I work in Digitalization & Modern Workplace at VITRONIC Machine Vision, where I support process automation, workflow optimization, and the integration of collaboration tools. Before this, I worked at Avanade, focusing on Microsoft Power Platform solutions for business automation.</p>
+                <h3>Interests</h3>
+                <div class="interest-tags">
+                    <span class="tag">Web Accessibility</span>
+                    <span class="tag">Open Source</span>
+                    <span class="tag">AI & Machine Learning</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Power Platform</span>
+                    <span class="tag">Prompt Engineering</span>
+                    <span class="tag">Large Language Models</span>
+                    <span class="tag">Power Platform</span>
+                    <span class="tag">Low-Code/ No-Code</span>
+                </div>
+                <h3>Programming Languages</h3>
+                <div class="language-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">JSON</span>
+                    <span class="tag">HTML & CSS</span>
+                    <span class="tag">Power FX</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Process Modeling</span>
+                </div>
+                <br>
+                <a href="https://www.linkedin.com/in/estefania-cunha-768310246/" target="_blank" class="linkedin-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo"> Connect with me on LinkedIn
+                </a>
+
+                <a href="https://github.com/esilvacunha/uni" target="_blank" class="linkedin-link">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"> Check my GitHub
+                </a>
+
+            </div>
+            <img src="pfp.png" alt="My Profile Picture" class="profile-pic">
+        </div>
+    </section>
+
+    <section class="section" id="certifications">
+        <h2>Certifications</h2>
+        <ul style="list-style-type: circle; margin-left: 20px;">
+            <li>Microsoft Certified: Power Platform Fundamentals</li>
+            <li>Intro to AI Ethics</li>
+            <li>Python Bootcamp: Vom Anfänger zum Profi, inkl. Data Science</li>
+            <li>Java Bootcamp</li>
+        </ul>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+        <button class="accordion">Knowledge Management: SARSA Sailing Agent</button>
+        <div class="panel">
+            <p>This project involved using the SARSA algorithm in a simulated sailing environment. The agent had to reach an island while learning to navigate wind effects. Enhancements included diagonal movement, stochastic wind, and strategy evaluation.</p>
+            <a class="github-link" href="https://github.com/esilvacunha/uni/tree/main/grundlage-aws" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"> View on GitHub
+            </a>
+        </div>
+
+        <button class="accordion">Bilderkennung 1: Semantic Segmentation for Face Recognition</button>
+        <div class="panel">
+            <p>Using DeepLabV3 and PSPNet, this project trained models for semantic segmentation of face/head images across ethnicities. The dataset included over 16,500 labeled samples, and metrics like IoU and F1 were used for evaluation.</p>
+            <a class="github-link" href="https://github.com/esilvacunha/uni/tree/main/bilderkennung1-semantic-segmentation" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"> View on GitHub
+            </a>
+        </div>
+
+        <button class="accordion">Robotik: Smart Cane Prototype</button>
+        <div class="panel">
+            <p>This assistive tech project modified a smart car kit into a navigation aid for visually impaired users using ultrasonic sensors and Arduino programming. Hardware issues affected motion, but obstacle detection worked.</p>
+            <a class="github-link" href="https://github.com/esilvacunha/uni/tree/main/smart-cane-robotik" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"> View on GitHub
+            </a>
+        </div>
+
+        <button class="accordion">Spracherkennung 2: Diabetic Health Chatbot</button>
+        <div class="panel">
+            <p>A chatbot was fine-tuned on a custom dataset using prompt engineering and deployed via Ollama. It supported diabetes management with tailored recipe and activity suggestions.</p>
+            <a class="github-link" href="https://github.com/esilvacunha/uni/tree/main/spracherkennung-2-diabetic-health" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"> View on GitHub
+            </a>
+        </div>
+
+        <button class="accordion">Bilderkennung 2: Real-Time Emotion Recognition</button>
+        <div class="panel">
+            <p>This real-time system combined Haar Cascades and DeepFace for emotion recognition using live webcam input. It demonstrated applications in mental health, AI assistants, and security.</p>
+            <a class="github-link" href="https://github.com/esilvacunha/uni/tree/main/Bilderkennung%20_2" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"> View on GitHub
+            </a>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var acc = document.getElementsByClassName("accordion");
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
